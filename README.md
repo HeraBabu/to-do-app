@@ -28,7 +28,7 @@ It demonstrates DOM manipulation, event handling, and basic data persistence.
 ---
 
 ## Next Steps / Improvements
- Add edit-task functionality
- Add task filters (All / Active / Completed)
- Convert to React version
- Deploy 
+ - Add edit-task functionality
+ - Add task filters (All / Active / Completed)
+ - Convert to React version
+ - Deploy 
