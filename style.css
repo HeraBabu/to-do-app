@@ -11,18 +11,20 @@ body {
     background: white;
     padding: 20px;
     border-radius: 8px;
-    width: 300px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing:border-box;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   }
   
   input {
-    width: 100%;
+    width: 60%;
     padding: 8px;
     margin-bottom: 10px;
   }
   
   button {
-    width: 100%;
+    width: 20%;
     padding: 8px;
     background-color: #007bff;
     color: white;
@@ -30,14 +32,27 @@ body {
     border-radius: 4px;
   }
   
-  li {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-  }
-  
-  li.completed {
-    text-decoration: line-through;
-    color: gray;
-  }
-  
+ li {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between checkbox and text */
+  padding: 8px 5px;
+  border-bottom: 1px solid #eee;
+  justify-content: flex-start;
+}
+li input[type="checkbox"]{
+  width:18px;
+  height:18px;
+  margin:0;
+}
+li.completed .task-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-text {
+  font-size:1rem;
+  line-height:1.4;
+  flex: 1;
+  text-align:left;
+}
